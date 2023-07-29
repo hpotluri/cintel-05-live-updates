@@ -58,6 +58,7 @@ def get_mtcars_server_functions(input, output, session):
     # Initialize the values on startup
 
     reactive_location = reactive.Value("ELY MN")
+    reactive_stock = reactive.Value("Tesla Inc")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
@@ -163,6 +164,14 @@ def get_mtcars_server_functions(input, output, session):
         logger.info(f"READING df len {len(df)}")
         return df
 
+    @reactive.file_reader(str(csv_stocks))
+    def get_mtcars_stock_df():
+        """Return mtcars temperatures pandas Dataframe."""
+        logger.info(f"READING df from {csv_stocks}")
+        df = pd.read_csv(csv_stocks)
+        logger.info(f"READING df len {len(df)}")
+        return df
+
     @output
     @render.text
     def mtcars_location_string():
@@ -197,6 +206,13 @@ def get_mtcars_server_functions(input, output, session):
         )
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot
+    
+    @output
+    @render.table
+    def mtcars_stock_table():
+        df = get_mtcars_stock_df()
+        logger.info(f"Rendering TEMP table with {len(df)} rows")
+        return df
 
     ###############################################################
 
@@ -212,6 +228,7 @@ def get_mtcars_server_functions(input, output, session):
         mtcars_location_string,
         mtcars_location_table,
         mtcars_location_chart,
+        mtcars_stock_table,
     ]
 
 
