@@ -1,0 +1,34 @@
+2023-08-04 22:30:56,718.continuous_stock.INFO =============================================================
+2023-08-04 22:30:56,719.continuous_stock.INFO Today is 2023-08-04 at 10:30 PM
+2023-08-04 22:30:56,719.continuous_stock.INFO This file is running on: nt Windows 10
+2023-08-04 22:30:56,719.continuous_stock.INFO The Python version is: 3.11.4
+2023-08-04 22:30:56,719.continuous_stock.INFO The active environment path is:   C:\Users\Harinya's Desktop\AppData\Local\Programs\Python\Python311
+2023-08-04 22:30:56,719.continuous_stock.INFO The current working directory is: C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates
+2023-08-04 22:30:56,719.continuous_stock.INFO =============================================================
+2023-08-04 22:31:00,223.continuous_stock.INFO Calling update_csv_stock
+2023-08-04 22:31:00,224.continuous_stock.INFO update_interval: 60
+2023-08-04 22:31:00,224.continuous_stock.INFO total_runtime: 900
+2023-08-04 22:31:00,224.continuous_stock.INFO num_updates: 10
+2023-08-04 22:31:00,224.continuous_stock.INFO Initialized csv file at C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_stock.csv
+2023-08-04 22:31:00,224.continuous_stock.INFO Calling get_stick_price for TSLA
+2023-08-04 22:31:00,224.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/TSLA
+2023-08-04 22:31:00,224.continuous_stock.INFO Calling get_stick_price for GM
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/GM
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling get_stick_price for TM
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/TM
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling get_stick_price for F
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/F
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling get_stick_price for HMC
+2023-08-04 22:31:00,225.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/HMC
+2023-08-04 22:31:00,226.continuous_stock.INFO Saving prices to C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_stock.csv
+2023-08-04 22:32:00,231.continuous_stock.INFO Calling get_stick_price for TSLA
+2023-08-04 22:32:00,231.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/TSLA
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling get_stick_price for GM
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/GM
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling get_stick_price for TM
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/TM
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling get_stick_price for F
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/F
+2023-08-04 22:32:00,232.continuous_stock.INFO Calling get_stick_price for HMC
+2023-08-04 22:32:00,233.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/HMC
+2023-08-04 22:32:00,233.continuous_stock.INFO Saving prices to C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_stock.csv

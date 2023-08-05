@@ -1,0 +1,26 @@
+2023-08-04 22:30:56,646.continuous_location.INFO =============================================================
+2023-08-04 22:30:56,647.continuous_location.INFO Today is 2023-08-04 at 10:30 PM
+2023-08-04 22:30:56,647.continuous_location.INFO This file is running on: nt Windows 10
+2023-08-04 22:30:56,647.continuous_location.INFO The Python version is: 3.11.4
+2023-08-04 22:30:56,647.continuous_location.INFO The active environment path is:   C:\Users\Harinya's Desktop\AppData\Local\Programs\Python\Python311
+2023-08-04 22:30:56,648.continuous_location.INFO The current working directory is: C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates
+2023-08-04 22:30:56,648.continuous_location.INFO =============================================================
+2023-08-04 22:31:00,219.continuous_location.INFO Calling update_csv_location
+2023-08-04 22:31:00,219.continuous_location.INFO update_interval: 60
+2023-08-04 22:31:00,219.continuous_location.INFO total_runtime: 900
+2023-08-04 22:31:00,219.continuous_location.INFO num_updates: 10
+2023-08-04 22:31:00,220.continuous_location.INFO Initialized csv file at C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_location.csv
+2023-08-04 22:31:00,220.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:31:00,220.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-08-04 22:31:00,220.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:31:00,221.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-08-04 22:31:00,221.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:31:00,221.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-08-04 22:31:00,223.continuous_location.INFO Saving temperatures to C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_location.csv
+2023-08-04 22:32:00,224.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:32:00,226.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.903237&lon=-91.867087&appid=None&units=imperial
+2023-08-04 22:32:00,227.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:32:00,229.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=36.5323&lon=-116.93&appid=None&units=imperial
+2023-08-04 22:32:00,229.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-04 22:32:00,230.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=40.346102&lon=-94.872471&appid=None&units=imperial
+2023-08-04 22:32:00,231.continuous_location.INFO Saving temperatures to C:\Users\Harinya's Desktop\Documents\HW\cintel-05-live-updates\data\mtcars_location.csv
