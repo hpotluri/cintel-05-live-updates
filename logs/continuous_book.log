@@ -1,0 +1,13 @@
+2023-08-10 22:20:09,560.continuous_book.INFO =============================================================
+2023-08-10 22:20:09,561.continuous_book.INFO Today is 2023-08-10 at 10:20 PM
+2023-08-10 22:20:09,561.continuous_book.INFO This file is running on: nt Windows 10
+2023-08-10 22:20:09,561.continuous_book.INFO The Python version is: 3.9.0
+2023-08-10 22:20:09,561.continuous_book.INFO The active environment path is:   C:\Users\Sudeep Potluri\AppData\Local\Programs\Python\Python39
+2023-08-10 22:20:09,562.continuous_book.INFO The current working directory is: C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates
+2023-08-10 22:20:09,562.continuous_book.INFO =============================================================
+2023-08-10 22:20:12,942.continuous_book.INFO Calling update_csv_book
+2023-08-10 22:20:13,922.continuous_book.INFO update_interval: 60
+2023-08-10 22:20:13,923.continuous_book.INFO total_runtime: 900
+2023-08-10 22:20:13,923.continuous_book.INFO num_updates: 100
+2023-08-10 22:20:13,923.continuous_book.INFO Initialized csv file at C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\book.csv
+2023-08-10 22:20:21,658.continuous_book.INFO Saving books to C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\book.csv

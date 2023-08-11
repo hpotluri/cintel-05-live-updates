@@ -1,0 +1,29 @@
+2023-08-10 22:20:09,232.mtcars_server.INFO =============================================================
+2023-08-10 22:20:09,233.mtcars_server.INFO Today is 2023-08-10 at 10:20 PM
+2023-08-10 22:20:09,233.mtcars_server.INFO This file is running on: nt Windows 10
+2023-08-10 22:20:09,233.mtcars_server.INFO The Python version is: 3.9.0
+2023-08-10 22:20:09,233.mtcars_server.INFO The active environment path is:   C:\Users\Sudeep Potluri\AppData\Local\Programs\Python\Python39
+2023-08-10 22:20:09,233.mtcars_server.INFO The current working directory is: C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates
+2023-08-10 22:20:09,234.mtcars_server.INFO =============================================================
+2023-08-10 22:20:11,215.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-08-10 22:20:11,276.mtcars_server.INFO Starting mtcars_output_widget1
+2023-08-10 22:20:11,719.mtcars_server.INFO Starting mtcars_plot1
+2023-08-10 22:20:12,840.mtcars_server.INFO READING df from C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\mtcars_location.csv
+2023-08-10 22:20:12,842.mtcars_server.INFO READING df len 3
+2023-08-10 22:20:12,843.mtcars_server.INFO init reactive_temp_df len: 3
+2023-08-10 22:20:12,843.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-10 22:20:12,844.mtcars_server.INFO Recent Temperature in F for ELY MN.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-10 22:20:12,845.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-10 22:20:12,848.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-10 22:20:12,900.mtcars_server.INFO READING df from C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\mtcars_stock.csv
+2023-08-10 22:20:12,901.mtcars_server.INFO READING df len 5
+2023-08-10 22:20:12,901.mtcars_server.INFO Rendering TEMP table with 5 rows
+2023-08-10 22:20:21,661.mtcars_server.INFO READING df from C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\mtcars_location.csv
+2023-08-10 22:20:21,666.mtcars_server.INFO READING df len 3
+2023-08-10 22:20:21,667.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-10 22:20:21,670.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-10 22:20:21,720.mtcars_server.INFO READING df from C:\Users\Sudeep Potluri\Documents\hari_stuff\cintel-05-live-updates\data\mtcars_stock.csv
+2023-08-10 22:20:21,725.mtcars_server.INFO READING df len 5
+2023-08-10 22:20:21,725.mtcars_server.INFO Rendering TEMP table with 5 rows
