@@ -123,6 +123,17 @@ def get_mtcars_server_functions(input, output, session):
         return plotly_express_plot
 
     @output
+    @render_widget
+    def mtstocks_output_widget1():
+        logger.info(f"Starting mtstocks_output_widget1")
+        df = get_mtcars_stock_df()
+        df_company = df[df["Company"] == reactive_stock.get()]
+        logger.info(f"Rendering Price chart with {len(df_company)} points")
+        plotly_express_plot = px.line(df_company, x="Time",y="Price", color="Company", markers=True)
+        plotly_express_plot.update_layout(title="MT Stocks with Plotly Express")
+        return plotly_express_plot
+
+    @output
     @render.plot
     def mtcars_plot1():
         logger.info(f"Starting mtcars_plot1")
@@ -155,6 +166,13 @@ def get_mtcars_server_functions(input, output, session):
         # init_mtcars_temps_csv()
         df = get_mtcars_temp_df()
         logger.info(f"init reactive_temp_df len: {len(df)}")
+    
+    @reactive.Effect
+    @reactive.event(input.MTSTOCKS_COMPANY_SELECT)
+    def _():
+        reactive_stock.set(input.MTSTOCKS_COMPANY_SELECT())
+        df = get_mtcars_stock_df()
+        logger.info(f"init reactive_proce_df len: {len(df)}")
 
     @reactive.file_reader(str(csv_locations))
     def get_mtcars_temp_df():
@@ -186,6 +204,19 @@ def get_mtcars_server_functions(input, output, session):
         return message
 
     @output
+    @render.text
+    def mtstocks_company_string():
+        logger.info("mtstocks_price_comapny_string starting")
+        selected = reactive_stock.get()
+        line1 = f"Recent Price in $ for {selected}."
+        line2 = "Updated once per minute for 15 minutes."
+        line3 = "Keeps the most recent 10 minutes of data."
+        message = f"{line1}\n{line2}\n{line3}"
+        logger.info(f"{message}")
+        return message
+
+
+    @output
     @render.table
     def mtcars_location_table():
         df = get_mtcars_temp_df()
@@ -211,8 +242,10 @@ def get_mtcars_server_functions(input, output, session):
     @render.table
     def mtcars_stock_table():
         df = get_mtcars_stock_df()
-        logger.info(f"Rendering TEMP table with {len(df)} rows")
-        return df
+        df_company = df[df["Company"] == reactive_stock.get()]
+        logger.info(f"Rendering Price chart with {len(df_company)} points")
+        return df_company
+    
 
     ###############################################################
 
@@ -226,9 +259,12 @@ def get_mtcars_server_functions(input, output, session):
         mtcars_plot1,
         mtcars_plot2,
         mtcars_location_string,
+        mtstocks_company_string,
         mtcars_location_table,
         mtcars_location_chart,
+        mtstocks_output_widget1,
         mtcars_stock_table,
+        
     ]
 
 

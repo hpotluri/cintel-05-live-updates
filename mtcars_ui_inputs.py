@@ -28,6 +28,15 @@ def get_mtcars_inputs():
             selected="ELY MN",
         ),
         ui.tags.hr(),
+        ui.h2("MT Stocks Interaction"),
+        ui.tags.hr(),
+        ui.input_select(
+            id="MTSTOCKS_COMPANY_SELECT",
+            label="Choose a Company",
+            choices=["Tesla Inc", "General Motors Company", "Toyota Motor Corporation", "Ford Motor Company", "Honda Motor Co"],
+            selected="Tesla Inc",
+        ),
+        ui.tags.hr(),
         ui.tags.section(
             ui.h3("MT Cars Table"),
             ui.tags.p("Description of each field in the table:"),

@@ -31,6 +31,8 @@ def get_mtcars_outputs():
             ui.output_text("mtcars_record_count_string"),
             ui.output_table("mtcars_filtered_table"),
             ui.tags.hr(),
+            ui.h3("Continuous Updates (Stocks API)"),
+            output_widget("mtstocks_output_widget1"),
             ui.h3("Stocks Table"),
             ui.output_table("mtcars_stock_table"),
             ui.tags.hr(),
