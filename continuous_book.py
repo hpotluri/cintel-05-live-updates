@@ -30,12 +30,14 @@ def get_API_key(keyName):
     load_dotenv()
     key = os.getenv(keyName)
     return key
+
 async def update_csv_book():
     """Update the CSV file with the latest location information."""
     logger.info("Calling update_csv_book")
     try:
         #book_api = f"https://api.nytimes.com/svc/books/v3/lists/full-overview?api-key={get_API_key(NY_TIMES_BOOK_API_KEY)}" #Gets the current best sellers
-        book_api = f"https://api.nytimes.com/svc/books/v3/lists/full-overview?published_date=2013-05-22&api-key={get_API_key(NY_TIMES_BOOK_API_KEY)}" #Gets the best sellers that week 
+        #book_api = f"https://api.nytimes.com/svc/books/v3/lists/full-overview?published_date=2013-05-22&api-key={get_API_key(NY_TIMES_BOOK_API_KEY)}" #Gets the best sellers that week 
+        book_api = ""
         result = await fetch_from_url(book_api, "json")
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
