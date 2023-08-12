@@ -40,14 +40,40 @@ def get_books_server_functions(input, output, session):
         logger.info(f"READING df len {len(df)}")
         return df
     
+    @reactive.Effect
+    @reactive.event(input.BOOK_PRICE,input.AUTHOR)
+    def _():
+        input_range = input.BOOK_PRICE()
+        input_min = input_range[0]
+        input_max = input_range[1]
+        author = input.AUTHOR()
+        
+        # init_mtcars_temps_csv()
+        df = get_books_df()
+        if author != "":
+            filtered_df = df[(df["Price"] >= input_min) & (df["Price"] <= input_max) & (df["Author"] == author)]
+        else:
+            filtered_df = df[(df["Price"] >= input_min) & (df["Price"] <= input_max)]
+        logger.info(f"init reactive_temp_df len: {len(df)}")
+        reactive_df.set(filtered_df)
+    
     @output
     @render.table
     def book_table():
-        df = get_book_df()
+        filtered_df = reactive_df.get()
         # Filter the data based on the selected location
-        logger.info(f"Rendering TEMP table with {len(df)} rows")
-        return df
-    
+        logger.info(f"Rendering TEMP table with {len(filtered_df)} rows")
+        return filtered_df
+    @output
+    @render_widget
+    def book_chart():
+        logger.info(f"Starting mtstocks_output_widget1")
+        filtered_df = reactive_df.get()
+        logger.info(f"Rendering Price chart with {len(filtered_df)} points")
+        plotly_express_plot = px.bar(filtered_df, x="Title",y="Price", color="Author")
+        plotly_express_plot.update_layout(title="Books with Plotly Express")
+        return plotly_express_plot
+
     @output
     @render.text
     def book_record_count_string():
@@ -59,5 +85,6 @@ def get_books_server_functions(input, output, session):
 
     return [
         book_table,
+        book_chart,
         book_record_count_string, 
     ]

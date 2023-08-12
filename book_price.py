@@ -24,10 +24,10 @@ def get_book_price(isbn):
             
             if 'saleInfo' in book_info and 'listPrice' in book_info['saleInfo']:
                 price_info = book_info['saleInfo']['listPrice']
-                if 'amount' in price_info and 'currencyCode' in price_info:
-                    return f"{price_info['amount']} {price_info['currencyCode']}"
+                if 'amount' in price_info:
+                    return price_info['amount']
     
-    return "Price information not found"
+    return 0.00
 
 # Example ISBN for a book
 isbn = "9781423140344"

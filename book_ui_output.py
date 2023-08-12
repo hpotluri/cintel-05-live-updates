@@ -15,7 +15,10 @@ def get_books_outputs():
         ui.tags.section(
             ui.h3("Best Sellers for the week of 5-22-13 (Book API)"),
             ui.tags.br(),
+            ui.output_text("book_record_count_string"),
+            ui.tags.br(),
             ui.output_ui("book_table"),
             ui.tags.br(),
+            output_widget("book_chart"),
         ),
     )

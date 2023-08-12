@@ -41,8 +41,8 @@ async def update_csv_files():
         logger.info("Calling continuous updates ...")
         task1 = asyncio.create_task(update_csv_location())
         task2 = asyncio.create_task(update_csv_stock())
-        #task3 = asyncio.create_task(update_csv_book())
-        task3 = asyncio.create_task(update_csv_bookNoAPI())
+        task3 = asyncio.create_task(update_csv_book())
+        #task3 = asyncio.create_task(update_csv_bookNoAPI())
         await asyncio.gather(task1,task2,task3)
         await asyncio.sleep(60)  # wait for 60 seconds
 

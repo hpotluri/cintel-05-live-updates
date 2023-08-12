@@ -14,6 +14,18 @@ def get_books_inputs():
     return ui.panel_sidebar(
         ui.h2("Book Interaction"),
         ui.tags.hr(),
+        ui.input_slider(
+            "BOOK_PRICE",
+            "Dollars ($)",
+            min=0.0,
+            max=50.0,
+            value=[10.0, 35.0],
+        ),
+        ui.tags.hr(),
+        ui.input_text(
+            "AUTHOR",
+            "Author Name",
+        ),
         ui.tags.hr(),
         ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
         ui.tags.hr(),
