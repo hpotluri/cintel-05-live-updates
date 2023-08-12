@@ -5,6 +5,15 @@
 - Author: [Denise Case](https://github.com/hpotluri)
 
 -----
+## How to use Code for P7
+
+In the app.py, on line 43 and 44 switch which one is commented. Right now the uncommented line uses dummy data instead of calling the actual APIs. This is done by
+generating random strings and numbers.
+
+Next, you will need to get an API key from both NY Times book API and Google's book API.
+In the .env file you will add your keys with the names
+NY_TIMES_BOOK_API_KEY = xxx
+GOOGLE_BOOK_API = xxx
 
 ## Copy This Repository
 
