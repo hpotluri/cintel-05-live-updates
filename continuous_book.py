@@ -132,7 +132,7 @@ async def update_csv_bookNoAPI():
                 author = ''.join(random.choices(string.ascii_letters, k=9))
                 rank = ''.join(random.choices(string.digits, k=1)) 
                 isbn = ''.join(random.choices(string.digits, k=10))
-                price = ''.join(random.choices(string.digits, k=2))
+                price = randint(0,50)
                 pubDate = ''.join(random.choices(string.ascii_letters, k=9))
                 time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Current time
                 new_record = {
